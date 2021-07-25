@@ -1,0 +1,85 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+
+///////////NavBar///////////
+body{
+    font-family: $font-family;
+}
+.navbar{
+    ul{
+        display:flex;
+        width:100%;
+        align-items:center;
+
+        @include mq(600px){
+            flex-wrap: wrap;
+        }
+
+        li{
+            list-style-type: none;
+            padding:1rem;
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+}
+
+.navbar-logo{
+    flex:1;
+    font-size:1.5rem;
+    user-select: none;
+}
+
+.navbar-toggle{
+    display: none;
+
+    @include mq(600px){
+        display: block;
+    }
+}
+
+.navbar-links{
+    &:hover{
+        background-color:$hover-color;
+        border-radius: 10px;
+
+        a{
+            color:$font-color;
+        }
+    }
+    @include mq(600px){
+        display:none;
+        width:100%;
+        text-align: center;
+    }
+}
+
+@include mq(600px){
+    .active{
+        display: block;
+    }
+}
+
+////main-container////
+.main-container{
+    margin:10px auto;
+    padding:10px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
