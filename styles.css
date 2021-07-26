@@ -10,6 +10,19 @@ body {
   font-size: 21px;
 }
 
+.main-container {
+  margin: 10px auto;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
 .navbar ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -78,11 +91,6 @@ body {
   .active {
     display: block;
   }
-}
-
-.main-container {
-  margin: 10px auto;
-  padding: 10px 20px;
 }
 
 .landingPage {
