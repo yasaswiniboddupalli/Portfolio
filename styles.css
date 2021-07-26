@@ -7,6 +7,7 @@
 
 body {
   font-family: marine, sans-serif;
+  font-size: 21px;
 }
 
 .navbar ul {
@@ -85,9 +86,8 @@ body {
 }
 
 .landingPage {
-  min-height: 500px;
+  min-height: 90vh;
   text-align: center;
-  border: 2px solid black;
   position: relative;
   display: -ms-grid;
   display: grid;
@@ -104,7 +104,44 @@ body {
 }
 
 .content {
-  border: 2px solid red;
   z-index: 1;
+}
+
+.content p {
+  padding: 1.5% 0;
+  color: rgba(27, 27, 27, 0.8);
+  text-align: left;
+}
+
+.content h1 {
+  padding-top: 0;
+  padding-bottom: 1.5%;
+  color: rgba(27, 27, 27, 0.8);
+}
+
+.content h1 span {
+  color: #473BF0;
+}
+
+.content .btn {
+  background-color: #473BF0;
+  float: left;
+}
+
+.content .btn a {
+  color: #E7E6F0;
+}
+
+.btn {
+  padding: 2% 2.5%;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  margin: 1.5% 0;
+}
+
+.btn a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=styles.css.map */

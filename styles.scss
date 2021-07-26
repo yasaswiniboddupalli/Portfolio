@@ -5,6 +5,7 @@
 ///////////NavBar///////////
 body{
     font-family: $font-family;
+    font-size:21px;
 }
 .navbar{
     ul{
@@ -71,9 +72,9 @@ body{
 ///landing page////
 
 .landingPage{
-    min-height: 500px;
+    min-height: 90vh;
     text-align: center;
-    border:2px solid black;
+   // border:2px solid black;
     position:relative;
     display:grid;
     place-items: center;
@@ -88,10 +89,41 @@ body{
     background-color: lighten($bg-color-1,19);
 }
 .content{
-   border:2px solid red;
+   //border:2px solid $text-color;
    z-index:1;
-}
+   p{
+       padding:1.5% 0;
+       color:$text-color;
+       text-align: left;
+   }
+   h1{
+       padding-top:0;
+       padding-bottom:1.5%;
+       color:$text-color;
 
+       span{
+           color:$cta-color;
+       }
+   }
+   .btn{
+       background-color: $cta-color;
+       float:left;
+       a{
+           color:$btn-text-color-light;
+       }
+   }
+}
+.btn{
+    padding:2% 2.5%;
+    font-size:1.2rem;
+    font-weight:$bold-font-weight;
+    border:none;
+    border-radius:5px;
+    margin:1.5% 0;
+    a{
+        text-decoration: none;
+    }
+}
 
 
 
