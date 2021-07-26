@@ -138,7 +138,10 @@ body{
     h2{
        @include h2_style;
     }
-    .card{
+    .card1{
+        right:10%;
+        margin:3% -7% 3% 0;
+        padding:9% 2% 9% 0%;
         @include card_base_style;
 
         .image{
@@ -157,9 +160,34 @@ body{
     .card1frame{
        @include cardframeright;
        
+       
     }
-}
+    //project-2
+    .card2{
+        left:10%;
+        margin:3% 0% 3% -7%;
+        padding:9% 2% 9% 0%;
+        @include card_base_style;
 
+        .image{
+           background-image: url(Images/desktop-design.jpg);
+        }
+        li{
+            border:2px solid $project1-pill-color;
+        }
+        .btn{
+            @include base_button;
+            background-color: $project1-pill-color;
+            color:white;
+            padding:3% 4%;
+        }
+    }
+    .card2frame{
+        @include cardframeleft;
+    }
+    //end of project-2
+}
+//end of projects
 
 
 

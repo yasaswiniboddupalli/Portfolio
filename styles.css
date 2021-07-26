@@ -177,18 +177,18 @@ body {
   color: #A398F7;
 }
 
-.projects .card {
+.projects .card1 {
+  right: 10%;
   margin: 3% -7% 3% 0;
   padding: 9% 2% 9% 0%;
   position: relative;
-  right: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: white;
 }
 
-.projects .card .image {
+.projects .card1 .image {
   min-width: 50%;
   min-height: 70%;
   /* top:21px;
@@ -200,7 +200,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.projects .card .projectContent {
+.projects .card1 .projectContent {
   width: 50%;
   /* top:18px;
             width:50%;
@@ -210,16 +210,16 @@ body {
   padding-right: 6%;
 }
 
-.projects .card .projectContent .pills {
+.projects .card1 .projectContent .pills {
   margin: 0;
   padding: 0.8em 0;
 }
 
-.projects .card .projectContent .pills ul {
+.projects .card1 .projectContent .pills ul {
   list-style-type: none;
 }
 
-.projects .card .projectContent .pills li {
+.projects .card1 .projectContent .pills li {
   display: inline-block;
   border-radius: 10px;
   margin: 0.2rem 0.1rem;
@@ -228,17 +228,17 @@ body {
   padding: 3px 10px;
 }
 
-.projects .card .projectContent p {
+.projects .card1 .projectContent p {
   color: rgba(27, 27, 27, 0.8);
   line-height: 31.5px;
 }
 
-.projects .card .projectContent h3 {
+.projects .card1 .projectContent h3 {
   font-weight: 500;
   font-size: 2rem;
 }
 
-.projects .card .projectContent .buttons {
+.projects .card1 .projectContent .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -256,20 +256,20 @@ body {
   margin: 0.8rem 0;
 }
 
-.projects .card .projectContent .buttons .fab {
+.projects .card1 .projectContent .buttons .fab {
   font-size: 2rem;
   padding: 2% 2.5%;
 }
 
-.projects .card .image {
+.projects .card1 .image {
   background-image: url(Images/covid19app.png);
 }
 
-.projects .card li {
+.projects .card1 li {
   border: 2px solid #A37CB5;
 }
 
-.projects .card .btn {
+.projects .card1 .btn {
   padding: 2% 2.5%;
   font-size: 1.2rem;
   font-weight: 700;
@@ -281,14 +281,129 @@ body {
   padding: 3% 4%;
 }
 
-.projects .card .btn a {
+.projects .card1 .btn a {
   text-decoration: none;
 }
 
 .projects .card1frame {
   position: relative;
-  width: 80%;
+  width: 70%;
   margin: 6% 15% 5% 15%;
   background-color: #EDCE1D;
+}
+
+.projects .card2 {
+  left: 10%;
+  margin: 3% 0% 3% -7%;
+  padding: 9% 2% 9% 0%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+}
+
+.projects .card2 .image {
+  min-width: 50%;
+  min-height: 70%;
+  /* top:21px;
+            left:0;
+            width:50%;
+            
+            position:absolute; */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.projects .card2 .projectContent {
+  width: 50%;
+  /* top:18px;
+            width:50%;
+            left:50%;
+            height:100%; */
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+.projects .card2 .projectContent .pills {
+  margin: 0;
+  padding: 0.8em 0;
+}
+
+.projects .card2 .projectContent .pills ul {
+  list-style-type: none;
+}
+
+.projects .card2 .projectContent .pills li {
+  display: inline-block;
+  border-radius: 10px;
+  margin: 0.2rem 0.1rem;
+  font-size: 0.9em;
+  color: rgba(27, 27, 27, 0.8);
+  padding: 3px 10px;
+}
+
+.projects .card2 .projectContent p {
+  color: rgba(27, 27, 27, 0.8);
+  line-height: 31.5px;
+}
+
+.projects .card2 .projectContent h3 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.projects .card2 .projectContent .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 10px;
+  margin: 0.8rem 0;
+}
+
+.projects .card2 .projectContent .buttons .fab {
+  font-size: 2rem;
+  padding: 2% 2.5%;
+}
+
+.projects .card2 .image {
+  background-image: url(Images/desktop-design.jpg);
+}
+
+.projects .card2 li {
+  border: 2px solid #A37CB5;
+}
+
+.projects .card2 .btn {
+  padding: 2% 2.5%;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  margin: 1.5% 0;
+  background-color: #A37CB5;
+  color: white;
+  padding: 3% 4%;
+}
+
+.projects .card2 .btn a {
+  text-decoration: none;
+}
+
+.projects .card2frame {
+  position: relative;
+  width: 70%;
+  margin: 6% 15% 5% 15%;
+  background-color: #75439B;
 }
 /*# sourceMappingURL=styles.css.map */

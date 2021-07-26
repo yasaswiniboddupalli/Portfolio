@@ -30,10 +30,9 @@
 
 @mixin card_base_style{
     //border:2px solid blue;
-        margin:3% -7% 3% 0;
-        padding:9% 2% 9% 0%;
+       
         position:relative;
-        right:10%;
+        
         display:flex;
         background-color: white;
 
@@ -106,7 +105,7 @@
 
 @mixin cardframeright{
     position:relative;
-    width:80%;
+    width:70%;
     //border:2px dashed red;
     margin:6% 15% 5% 15%;
     background-color: #EDCE1D;
@@ -114,9 +113,9 @@
 
 @mixin cardframeleft{
        position:relative;
-       width:80%;
-       border:2px dashed red;
-       margin:5%;
-       left:20%;
-       background-color: #ffdba4;
+       width:70%;
+       //border:2px dashed red;
+       margin:6% 15% 5% 15%;
+       //left:20%;
+       background-color: #75439B;
 }
