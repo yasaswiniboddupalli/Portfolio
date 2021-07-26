@@ -5,7 +5,7 @@
 
 body{
     font-family: $font-family;
-    font-size:21px;
+    font-size:$font-size;
 }
 
 ////main-container////
@@ -107,6 +107,7 @@ body{
        padding-top:0;
        padding-bottom:1.5%;
        color:$text-color;
+       font-size:3rem;
 
        span{
            color:$cta-color;
@@ -121,18 +122,43 @@ body{
    }
 }
 .btn{
-    padding:2% 2.5%;
-    font-size:1.2rem;
-    font-weight:$bold-font-weight;
-    border:none;
-    border-radius:5px;
-    margin:1.5% 0;
-    a{
-        text-decoration: none;
-    }
+    @include base_button;
 }
 
 ////projects/////
+.bg2{
+    background-color: lighten($bg-color-1,19);
+}
+.projects{
+    margin-top:0;
+    padding-top:0;
+   // border:2px solid red;
+    display:grid;
+
+    h2{
+       @include h2_style;
+    }
+    .card{
+        @include card_base_style;
+
+        .image{
+           background-image: url(Images/covid19app.png);
+        }
+        li{
+            border:2px solid $project1-pill-color;
+        }
+        .btn{
+            @include base_button;
+            background-color: $project1-pill-color;
+            color:white;
+            padding:3% 4%;
+        }
+    }
+    .card1frame{
+       @include cardframeright;
+       
+    }
+}
 
 
 

@@ -1,5 +1,122 @@
+
 @mixin mq($arg){
     @media screen and (max-width:$arg){
         @content;
     }
+}
+
+@mixin base_button{
+    padding:2% 2.5%;
+    font-size:1.2rem;
+    font-weight:$bold-font-weight;
+    border:none;
+    border-radius:5px;
+    margin:1.5% 0;
+    a{
+        text-decoration: none;
+    }
+}
+
+@mixin h2_style{
+    font-weight:500;
+    color:$text-color;
+    text-align: center;
+    font-size:1.9rem;
+    margin-top:5%;
+    .tag{
+        color:$hover-color;
+    }
+}
+
+@mixin card_base_style{
+    //border:2px solid blue;
+        margin:3% -7% 3% 0;
+        padding:9% 2% 9% 0%;
+        position:relative;
+        right:10%;
+        display:flex;
+        background-color: white;
+
+        .image{
+            //border:2px solid green;
+            min-width:50%;
+            min-height:70%;
+            /* top:21px;
+            left:0;
+            width:50%;
+            
+            position:absolute; */
+            background-size:contain;
+            background-repeat: no-repeat;
+           // padding:2% 0; 
+
+        }
+        .projectContent{
+            //border:3px solid pink;
+            width:50%;
+            //position: absolute;
+            /* top:18px;
+            width:50%;
+            left:50%;
+            height:100%; */
+            padding-left:6%;
+            padding-right:6%;
+
+
+            .pills{
+               // border:5px solid orange;
+                margin:0;
+                padding:0.8em 0;
+                ul{
+                    list-style-type: none;
+                }
+                li{
+                    display: inline-block;
+                    //border:2px solid lighten($cta-color,15);
+                    border-radius:10px;
+                    margin:0.2rem 0.1rem;
+                    font-size: 0.9em;
+                    color:$text-color;
+                    padding:3px 10px;
+                }
+            }
+            p{
+                color:$text-color;
+                line-height:$font-size*1.5;
+            }
+            h3{
+                font-weight:500;
+                font-size:2rem;
+            }
+            .buttons{
+               // border:2px solid black;
+                display:flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding-right:10px;
+                margin:0.8rem 0;
+                   .fab{
+                       font-size:2rem;
+                       padding:2% 2.5%;
+                   }
+            }
+        }
+}
+
+@mixin cardframeright{
+    position:relative;
+    width:80%;
+    //border:2px dashed red;
+    margin:6% 15% 5% 15%;
+    background-color: #EDCE1D;
+}
+
+@mixin cardframeleft{
+       position:relative;
+       width:80%;
+       border:2px dashed red;
+       margin:5%;
+       left:20%;
+       background-color: #ffdba4;
 }
