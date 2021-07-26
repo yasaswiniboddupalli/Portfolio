@@ -83,4 +83,28 @@ body {
   margin: 10px auto;
   padding: 10px 20px;
 }
+
+.landingPage {
+  min-height: 500px;
+  text-align: center;
+  border: 2px solid black;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.bg1 {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  background-color: #f9ded9;
+}
+
+.content {
+  border: 2px solid red;
+  z-index: 1;
+}
 /*# sourceMappingURL=styles.css.map */

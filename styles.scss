@@ -68,6 +68,30 @@ body{
     padding:10px 20px;
 }
 
+///landing page////
+
+.landingPage{
+    min-height: 500px;
+    text-align: center;
+    border:2px solid black;
+    position:relative;
+    display:grid;
+    place-items: center;
+    
+}
+.bg1{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    background-color: lighten($bg-color-1,19);
+}
+.content{
+   border:2px solid red;
+   z-index:1;
+}
+
 
 
 
