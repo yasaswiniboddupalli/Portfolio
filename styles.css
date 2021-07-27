@@ -435,6 +435,11 @@ body {
   border: 2px solid #EDCE1D;
 }
 
+.projects .card2 p {
+  color: rgba(27, 27, 27, 0.8);
+  line-height: 31.5px;
+}
+
 .projects .card2 .btn {
   padding: 2% 2.5%;
   font-size: 1.2rem;
@@ -537,17 +542,17 @@ body {
   text-decoration: none;
 }
 
-.about .skills {
+.about .about_container .skills {
   width: 50%;
   padding-left: 5%;
 }
 
-.about .skills h3 {
+.about .about_container .skills h3 {
   color: rgba(104, 104, 104, 0.8);
   font-weight: 500;
 }
 
-.about .skills .skillslist {
+.about .about_container .skills .skillslist {
   padding: 20px 10px;
   display: -ms-grid;
   display: grid;
@@ -557,62 +562,87 @@ body {
 }
 
 @media screen and (max-width: 1070px) {
-  .about .skills .skillslist {
+  .about .about_container .skills .skillslist {
     -ms-grid-columns: (50%)[2];
         grid-template-columns: repeat(2, 50%);
   }
 }
 
-.about .skills .skillslist li {
+.about .about_container .skills .skillslist li {
   list-style-type: none;
   text-align: center;
   padding: 15px 20px;
 }
 
-.about .skills .skillslist .js {
+.about .about_container .skills .skillslist .js {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
   color: rgba(27, 27, 27, 0.8);
 }
 
-.about .skills .skillslist .HTML {
+.about .about_container .skills .skillslist .HTML {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
   color: rgba(27, 27, 27, 0.8);
 }
 
-.about .skills .skillslist .css {
+.about .about_container .skills .skillslist .css {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
   color: rgba(27, 27, 27, 0.8);
 }
 
-.about .skills .skillslist .sass {
+.about .about_container .skills .skillslist .sass {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
   color: rgba(27, 27, 27, 0.8);
 }
 
-.about .skills .skillslist .jest {
+.about .about_container .skills .skillslist .jest {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
   color: rgba(27, 27, 27, 0.8);
 }
 
-.about .skills .skillslist .git {
+.about .about_container .skills .skillslist .git {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
   color: rgba(27, 27, 27, 0.8);
 }
 
-.about .skills .skillslist .color {
+.about .about_container .skills .skillslist .color {
   background-color: #edce1d;
+}
+
+@media screen and (max-width: 700px) {
+  .about .about_container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .about .about_container .abouttext {
+    grid-column: 1/-1;
+    width: 100%;
+  }
+  .about .about_container .skills {
+    grid-column: 1/-1;
+    width: 100%;
+    padding-left: 7%;
+  }
+}
+
+@media screen and (max-width: 700px) and (max-width: 1070px) {
+  .about .about_container .skills .skillslist {
+    -ms-grid-columns: (30%)[2];
+        grid-template-columns: repeat(2, 30%);
+  }
 }
 
 .bg3 {
@@ -704,6 +734,12 @@ body {
   background-color: #75439B;
   width: 50%;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 700px) {
+  .contact .card1frame {
+    width: 70%;
+  }
 }
 
 .footer {

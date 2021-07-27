@@ -200,6 +200,9 @@ body{
         li{
             border:2px solid $project2-pill-color;
         }
+        p{
+            @include para;
+        }
         .btn{
             @include base_button;
             background-color: $project2-pill-color;
@@ -250,58 +253,82 @@ body{
                 padding:3% 4%;
             }
         }
-    }
-    .skills{
-        //border:2px solid yellow;
-        width:50%;
-        padding-left:5%;
-        h3{
-            color:lighten($text-color,30);
-            font-weight:500;
-        }
-        .skillslist{
-            padding:20px 10px;
+        //about...
+        .skills{
+            //border:2px solid yellow;
+            width:50%;
+            padding-left:5%;
+            h3{
+                color:lighten($text-color,30);
+                font-weight:500;
+            }
+            .skillslist{
+                padding:20px 10px;
+                display:grid;
+                grid-template-columns: repeat(2,max(40%));
+                grid-auto-rows: min-width(200px);
+                @include mq(1070px){
+                    grid-template-columns: repeat(2,max(50%));
+                }
+                li{
+                   // border:2px solid blue; 
+                    list-style-type: none; 
+                   text-align: center;
+                   padding:15px 20px;
+                }
+                .js{
+                    grid-column:1/2;
+                    @include skill;
+                }
+                .HTML{
+                    grid-column:2/3;
+                    @include skill;
+                }
+                .css{
+                    grid-column: 1/2;
+                    @include skill;
+                }
+                .sass{
+                    grid-column: 2/3;
+                    @include skill;
+                }
+                .jest{
+                    grid-column: 1/2;
+                    @include skill;
+                }
+                .git{
+                    grid-column: 2/3;
+                    @include skill;
+                }
+                .color{
+                    background-color:lighten($project2-pill-color,0);
+                }
+            }
+        }//.skill
+
+        @include mq(700px){
             display:grid;
-            grid-template-columns: repeat(2,max(40%));
-            grid-auto-rows: min-width(200px);
-            @include mq(1070px){
-                grid-template-columns: repeat(2,max(50%));
+            grid-template-columns: repeat(2,1fr);
+            .abouttext{
+                grid-column: 1/-1;
+                width:100%;
             }
-            li{
-               // border:2px solid blue; 
-                list-style-type: none; 
-               text-align: center;
-               padding:15px 20px;
-            }
-            .js{
-                grid-column:1/2;
-                @include skill;
-            }
-            .HTML{
-                grid-column:2/3;
-                @include skill;
-            }
-            .css{
-                grid-column: 1/2;
-                @include skill;
-            }
-            .sass{
-                grid-column: 2/3;
-                @include skill;
-            }
-            .jest{
-                grid-column: 1/2;
-                @include skill;
-            }
-            .git{
-                grid-column: 2/3;
-                @include skill;
-            }
-            .color{
-                background-color:lighten($project2-pill-color,0);
+            .skills{
+                //border:2px solid black;
+                grid-column: 1/-1;
+                width:100%;
+                padding-left:7%;
+
+                .skillslist{
+                    @include mq(1070px){
+                        grid-template-columns: repeat(2,max(30%));
+                    }
+                   
+                }
             }
         }
     }
+    
 }
  .bg3{
     background: linear-gradient(90deg,$bg-color-2 50%,white 50%);
@@ -365,6 +392,10 @@ body{
        @include cardframeleft;
         width:50%;
         margin:0 auto;
+
+        @include mq(700px){
+            width:70%;
+        }
     }      
 }
 .footer{
