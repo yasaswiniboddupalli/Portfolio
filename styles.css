@@ -533,12 +533,93 @@ body {
 }
 
 .bg3 {
-  /* position: absolute;
-    top: 0%;
-    left: 50%;
-    width: 50%;
-    height: 100%; */
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, #FFF4FF), color-stop(50%, white));
   background: linear-gradient(90deg, #FFF4FF 50%, white 50%);
+}
+
+.bg4 {
+  background: #FFF4FF;
+}
+
+.contact {
+  padding-bottom: 5%;
+}
+
+.contact h2 {
+  font-weight: 500;
+  color: rgba(27, 27, 27, 0.8);
+  text-align: center;
+  font-size: 1.9rem;
+  margin-top: 5%;
+  padding-top: 5%;
+  margin: 0 0 0 -5%;
+  margin-bottom: 5%;
+}
+
+.contact h2 .tag {
+  color: #A398F7;
+}
+
+.contact .contactform {
+  position: relative;
+  background-color: white;
+  position: relative;
+  right: 10%;
+  margin: 3% -7% 3% 0;
+}
+
+.contact .contactform label {
+  font-family: marine, sans-serif;
+  color: rgba(27, 27, 27, 0.8);
+}
+
+.contact .contactform .form {
+  padding: 5% 20%;
+}
+
+.contact .contactform input[type=text], .contact .contactform input[type=email], .contact .contactform select, .contact .contactform textarea {
+  all: unset;
+  width: 100%;
+  font-family: marine, sans-serif;
+  font-size: 1.2rem;
+  padding: 12px;
+  border: 1px solid rgba(27, 27, 27, 0.8);
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.contact .contactform input[type=text]:focus, .contact .contactform input[type=email]:focus, .contact .contactform select:focus, .contact .contactform textarea:focus {
+  border: 3px solid #A37CB5;
+}
+
+.contact .contactform .btn {
+  padding: 2% 2.5%;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  margin: 1.5% 0;
+  background-color: #EDCE1D;
+  color: rgba(27, 27, 27, 0.8);
+  margin-top: 21px;
+  padding: 1rem 2rem;
+}
+
+.contact .contactform .btn a {
+  text-decoration: none;
+}
+
+.contact .card1frame {
+  border: 1px solid #EDCE1D;
+  position: relative;
+  width: 70%;
+  margin: 6% 15% 5% 15%;
+  background-color: #75439B;
+  width: 50%;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=styles.css.map */
