@@ -6,6 +6,12 @@
 body{
     font-family: $font-family;
     font-size:$font-size;
+    @include mq(950px){
+        font-size:18px;
+    }
+    @include mq(800px){
+        font-size:16px;
+    }
 }
 
 ////main-container////
@@ -15,7 +21,6 @@ body{
     position:relative;
 }
 ///////////NavBar///////////
-
 .navbar{
     position:sticky;
     background: white;
@@ -109,6 +114,12 @@ body{
        padding-bottom:1.5%;
        color:$text-color;
        font-size:3rem;
+       @include mq(950px){
+           font-size:2.5rem;
+       }
+       @include mq(800px){
+           font-size:2rem;
+       }
 
        span{
            color:lighten($cta-color,5);
@@ -145,6 +156,15 @@ body{
         padding:9% 2% 9% 0%;
         @include card_base_style;
 
+        h3{
+            @include mq(800px){
+                font-size:1.1rem;
+            }
+        }
+        img{
+            display: none;
+        }
+
         .image{
            background-image: url(Images/covid19app.png);
         }
@@ -160,11 +180,12 @@ body{
             color:white;
             padding:3% 4%;
         }
+        @include mq(700px){
+           @include mobile_projects;
+        }
     }
     .card1frame{
-       @include cardframeright;
-       
-       
+       @include cardframeright;       
     }
     //project-2
     .card2{
@@ -185,6 +206,9 @@ body{
             color:$text-color;
             padding:3% 4%;
         }
+        @include mq(700px){
+            @include mobile_projects;
+         }
     }
     .card2frame{
         @include cardframeleft;
@@ -238,9 +262,11 @@ body{
         .skillslist{
             padding:20px 10px;
             display:grid;
-            grid-template-columns: repeat(2,max(25%));
+            grid-template-columns: repeat(2,max(40%));
             grid-auto-rows: min-width(200px);
-            
+            @include mq(1070px){
+                grid-template-columns: repeat(2,max(50%));
+            }
             li{
                // border:2px solid blue; 
                 list-style-type: none; 

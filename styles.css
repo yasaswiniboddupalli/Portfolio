@@ -10,6 +10,18 @@ body {
   font-size: 21px;
 }
 
+@media screen and (max-width: 950px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 16px;
+  }
+}
+
 .main-container {
   margin: 10px auto;
   padding: 10px 20px;
@@ -127,6 +139,18 @@ body {
   padding-bottom: 1.5%;
   color: rgba(27, 27, 27, 0.8);
   font-size: 3rem;
+}
+
+@media screen and (max-width: 950px) {
+  .content h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .content h1 {
+    font-size: 2rem;
+  }
 }
 
 .content h1 span {
@@ -257,6 +281,16 @@ body {
   padding: 2% 2.5%;
 }
 
+@media screen and (max-width: 800px) {
+  .projects .card1 h3 {
+    font-size: 1.1rem;
+  }
+}
+
+.projects .card1 img {
+  display: none;
+}
+
 .projects .card1 .image {
   background-image: url(Images/covid19app.png);
 }
@@ -284,6 +318,27 @@ body {
 
 .projects .card1 .btn a {
   text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
+  .projects .card1 {
+    padding: 0%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  .projects .card1 .image {
+    grid-column: 1/-1;
+    background-size: cover;
+  }
+  .projects .card1 .projectContent {
+    grid-column: 1/-1;
+    width: 100%;
+  }
 }
 
 .projects .card1frame {
@@ -396,6 +451,27 @@ body {
   text-decoration: none;
 }
 
+@media screen and (max-width: 700px) {
+  .projects .card2 {
+    padding: 0%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  .projects .card2 .image {
+    grid-column: 1/-1;
+    background-size: cover;
+  }
+  .projects .card2 .projectContent {
+    grid-column: 1/-1;
+    width: 100%;
+  }
+}
+
 .projects .card2frame {
   position: relative;
   width: 70%;
@@ -475,9 +551,16 @@ body {
   padding: 20px 10px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (25%)[2];
-      grid-template-columns: repeat(2, 25%);
+  -ms-grid-columns: (40%)[2];
+      grid-template-columns: repeat(2, 40%);
   grid-auto-rows: min-width(200px);
+}
+
+@media screen and (max-width: 1070px) {
+  .about .skills .skillslist {
+    -ms-grid-columns: (50%)[2];
+        grid-template-columns: repeat(2, 50%);
+  }
 }
 
 .about .skills .skillslist li {

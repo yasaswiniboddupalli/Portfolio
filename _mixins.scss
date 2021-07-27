@@ -124,3 +124,26 @@
        //left:20%;
        background-color: #75439B;
 }
+
+@mixin mobile_projects{
+    // border:2px solid grey;
+    padding:0%;
+    //background-color: pink;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-gap:20px;
+    .image{
+        grid-column: 1/-1;
+       // grid-rows:1/2;
+        background-size:cover;
+        //background-color: seagreen;
+        //border:2px solid saddlebrown;
+    }
+    .projectContent{
+        grid-column:1/-1;
+        //grid-rows:3/4;
+        width:100%;
+
+    }
+}
