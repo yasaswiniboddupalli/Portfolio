@@ -19,6 +19,7 @@ body {
 .navbar {
   position: -webkit-sticky;
   position: sticky;
+  background: white;
   top: 0;
   z-index: 2;
 }
@@ -129,7 +130,7 @@ body {
 }
 
 .content h1 span {
-  color: #473BF0;
+  color: #5d53f2;
 }
 
 .content .btn {
@@ -228,11 +229,6 @@ body {
   padding: 3px 10px;
 }
 
-.projects .card1 .projectContent p {
-  color: rgba(27, 27, 27, 0.8);
-  line-height: 31.5px;
-}
-
 .projects .card1 .projectContent h3 {
   font-weight: 500;
   font-size: 2rem;
@@ -267,6 +263,11 @@ body {
 
 .projects .card1 li {
   border: 2px solid #A37CB5;
+}
+
+.projects .card1 p {
+  color: rgba(27, 27, 27, 0.8);
+  line-height: 31.5px;
 }
 
 .projects .card1 .btn {
@@ -343,11 +344,6 @@ body {
   padding: 3px 10px;
 }
 
-.projects .card2 .projectContent p {
-  color: rgba(27, 27, 27, 0.8);
-  line-height: 31.5px;
-}
-
 .projects .card2 .projectContent h3 {
   font-weight: 500;
   font-size: 2rem;
@@ -381,7 +377,7 @@ body {
 }
 
 .projects .card2 li {
-  border: 2px solid #A37CB5;
+  border: 2px solid #EDCE1D;
 }
 
 .projects .card2 .btn {
@@ -391,8 +387,8 @@ body {
   border: none;
   border-radius: 5px;
   margin: 1.5% 0;
-  background-color: #A37CB5;
-  color: white;
+  background-color: #EDCE1D;
+  color: rgba(27, 27, 27, 0.8);
   padding: 3% 4%;
 }
 
@@ -405,5 +401,144 @@ body {
   width: 70%;
   margin: 6% 15% 5% 15%;
   background-color: #75439B;
+}
+
+.about {
+  height: 100%;
+  position: relative;
+}
+
+.about h2 {
+  font-weight: 500;
+  color: rgba(27, 27, 27, 0.8);
+  text-align: center;
+  font-size: 1.9rem;
+  margin-top: 5%;
+  padding-top: 5%;
+  margin-top: 0;
+  margin-bottom: 5%;
+}
+
+.about h2 .tag {
+  color: #A398F7;
+}
+
+.about .about_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about .about_container .abouttext {
+  width: 50%;
+  padding: 10px;
+  padding: 0 3% 4% 5%;
+}
+
+.about .about_container .abouttext p {
+  color: rgba(27, 27, 27, 0.8);
+  line-height: 31.5px;
+}
+
+.about .about_container .abouttext p span {
+  background-color: #EDCE1D;
+}
+
+.about .about_container .abouttext .btn {
+  padding: 2% 2.5%;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  margin: 1.5% 0;
+  background-color: #A37CB5;
+  color: white;
+  margin-top: 21px;
+  padding: 3% 4%;
+}
+
+.about .about_container .abouttext .btn a {
+  text-decoration: none;
+}
+
+.about .skills {
+  width: 50%;
+  padding-left: 5%;
+}
+
+.about .skills h3 {
+  color: rgba(104, 104, 104, 0.8);
+  font-weight: 500;
+}
+
+.about .skills .skillslist {
+  padding: 20px 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (25%)[2];
+      grid-template-columns: repeat(2, 25%);
+  grid-auto-rows: min-width(200px);
+}
+
+.about .skills .skillslist li {
+  list-style-type: none;
+  text-align: center;
+  padding: 15px 20px;
+}
+
+.about .skills .skillslist .js {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  color: rgba(27, 27, 27, 0.8);
+}
+
+.about .skills .skillslist .HTML {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  color: rgba(27, 27, 27, 0.8);
+}
+
+.about .skills .skillslist .css {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  color: rgba(27, 27, 27, 0.8);
+}
+
+.about .skills .skillslist .sass {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  color: rgba(27, 27, 27, 0.8);
+}
+
+.about .skills .skillslist .jest {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  color: rgba(27, 27, 27, 0.8);
+}
+
+.about .skills .skillslist .git {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  color: rgba(27, 27, 27, 0.8);
+}
+
+.about .skills .skillslist .color {
+  background-color: #edce1d;
+}
+
+.bg3 {
+  /* position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 50%;
+    height: 100%; */
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #FFF4FF), color-stop(50%, white));
+  background: linear-gradient(90deg, #FFF4FF 50%, white 50%);
 }
 /*# sourceMappingURL=styles.css.map */
