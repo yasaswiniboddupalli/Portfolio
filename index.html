@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/nfn4yqr.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles.css">
     <title>Yashaswini Boddupalli Portfolio</title>
 </head>
@@ -38,7 +39,7 @@
 
             <!--project1-->
             <div class="card1frame">
-                <div class="card1" id="project1">
+                <div class="card1" id="project1" data-aos="fade-left">
                     <div class="image">
                        <img src="Images/covid19app.png" alt="screenshot of project1">
                     </div>
@@ -70,7 +71,7 @@
 
             <!--project2-->
              <div class="card2frame">
-                <div class="card2" id="project2">
+                <div class="card2" id="project2" data-aos="fade-right">
                     <div class="image">
                        <!-- <img src="Images/covid19app.png" alt="screenshot of project1">-->
                     </div>
@@ -83,7 +84,7 @@
                                 <li>Git</li>
                             </ul>
                         </div>
-                        <p>Develop a responsive web app based on the provided design handout and styleguides.</p>
+                        <p>Developed a responsive web app based on the provided design handout and styleguides.</p>
                         <div class="buttons">
                             <button class="btn">View Project</button>
                             <a href=""><i class="fab fa-github"></i></a>
@@ -104,14 +105,14 @@
             <div class="bg3">
                 <h2><span class="tag"><</span> About <span class="tag">></span></h2>
             <div class="about_container">
-                <div class="abouttext">
+                <div class="abouttext" data-aos="fade-right">
                     <p>I am a front-end developer with a strong background in software engineering and UX/UI design.
                          I’m passionate about creating and developing software design solutions that help end-users achieve their goals and generate 
                          more profits for the business. <span>Currently, I am looking for a front-end developer job.</span> Outside of my work, I love riding my bike and playing badminton.</p>
                     
                     <button class="btn">Download CV</button>
                 </div>
-                <div class="skills">
+                <div class="skills" data-aos="fade-left">
                     <h3>Skills{</h3>
                     <div class="skillslist">
                        <!-- <ul>-->
@@ -135,7 +136,7 @@
         <div class="contact bg4" id="contact">
             <h2><span class="tag"><</span> Contact <span class="tag">></span></h2>
             <div class="card1frame">
-                <div class="contactform">
+                <div class="contactform" data-aos="fade-up">
                     <form action="https://formsubmit.co/boddupalliguf18141@gmail.com" method="POST" class="form">
                         <label for="name">Name</label>
                         <input type="text" name="name" placeholder="John McDonald" required>
@@ -156,5 +157,13 @@
 
     </div>
     <script src="nav.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      duration: 3000;
+      delay: 1000;
+      easing:'ease-in-out';
+    </script>
+  
 </body>
 </html>

@@ -122,10 +122,44 @@ body {
   width: 50%;
   height: 100%;
   background-color: #f9ded9;
+  -webkit-animation: grow 3s ease-in-out 1s;
+          animation: grow 3s ease-in-out 1s;
+}
+
+@-webkit-keyframes grow {
+  0% {
+    width: 50%;
+    height: 2%;
+    background-color: #f9ded9;
+  }
+  100% {
+    width: 50%;
+    height: 100%;
+    background-color: #f9ded9;
+  }
+}
+
+@keyframes grow {
+  0% {
+    width: 50%;
+    height: 2%;
+    background-color: #f9ded9;
+  }
+  100% {
+    width: 50%;
+    height: 100%;
+    background-color: #f9ded9;
+  }
 }
 
 .content {
   z-index: 1;
+}
+
+@media screen and (max-width: 650px) {
+  .content {
+    text-align: left;
+  }
 }
 
 .content p {
@@ -362,6 +396,12 @@ body {
   }
 }
 
+@media screen and (max-width: 650px) {
+  .projects .card1 .image {
+    background-image: url(Images/Mobile.png);
+  }
+}
+
 .projects .card1frame {
   position: relative;
   width: 70%;
@@ -506,6 +546,12 @@ body {
   }
 }
 
+@media screen and (max-width: 650px) {
+  .projects .card2 .image {
+    background-image: url(Images/mobile-design.jpg);
+  }
+}
+
 .projects .card2frame {
   position: relative;
   width: 70%;
@@ -552,6 +598,11 @@ body {
 
 .about .about_container .abouttext p span {
   background-color: #EDCE1D;
+  /* animation: focus 1s ease-in 1s;
+                    @keyframes focus {
+                        0%{background-color:$bg-color-2;};
+                        100%{background-color:$project2-pill-color;};
+                    } */
 }
 
 .about .about_container .abouttext .btn {
