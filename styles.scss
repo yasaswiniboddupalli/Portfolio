@@ -131,6 +131,9 @@ body{
        a{
            color:$btn-text-color-light;
        }
+       &:hover{
+        box-shadow: 0px 8px 16px #37364D;
+       }
    }
 }
 .btn{
@@ -179,7 +182,15 @@ body{
             background-color: $project1-pill-color;
             color:white;
             padding:3% 4%;
+            &:hover{
+                box-shadow: 0px 8px 16px #45364D;
+               }
         }
+       /*  .fab{
+            &:hover{
+                box-shadow: 0px 8px 16px #37364D;
+               } 
+        }*/
         @include mq(700px){
            @include mobile_projects;
         }
@@ -208,6 +219,9 @@ body{
             background-color: $project2-pill-color;
             color:$text-color;
             padding:3% 4%;
+            &:hover{
+                box-shadow: 0px 8px 16px #4D4936;
+               }
         }
         @include mq(700px){
             @include mobile_projects;
@@ -251,6 +265,9 @@ body{
                 color:white;
                 margin-top:21px;
                 padding:3% 4%;
+                &:hover{
+                    box-shadow: 0px 8px 16px #45364D;
+                   }
             }
         }
         //about...
@@ -385,6 +402,9 @@ body{
               color:$text-color;
               margin-top:21px;
               padding:1rem 2rem;
+              &:hover{
+                box-shadow: 0px 8px 16px #4D4936;
+               }
           }
     }
     .card1frame{

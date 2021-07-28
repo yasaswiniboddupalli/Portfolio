@@ -166,6 +166,11 @@ body {
   color: #E7E6F0;
 }
 
+.content .btn:hover {
+  -webkit-box-shadow: 0px 8px 16px #37364D;
+          box-shadow: 0px 8px 16px #37364D;
+}
+
 .btn {
   padding: 2% 2.5%;
   font-size: 1.2rem;
@@ -173,6 +178,9 @@ body {
   border: none;
   border-radius: 5px;
   margin: 1.5% 0;
+  cursor: pointer;
+  -webkit-transition: all 0.5sec ease-in 1s;
+  transition: all 0.5sec ease-in 1s;
 }
 
 .btn a {
@@ -211,6 +219,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   background-color: white;
+  /*  .fab{
+            &:hover{
+                box-shadow: 0px 8px 16px #37364D;
+               } 
+        }*/
 }
 
 .projects .card1 .image {
@@ -311,6 +324,9 @@ body {
   border: none;
   border-radius: 5px;
   margin: 1.5% 0;
+  cursor: pointer;
+  -webkit-transition: all 0.5sec ease-in 1s;
+  transition: all 0.5sec ease-in 1s;
   background-color: #A37CB5;
   color: white;
   padding: 3% 4%;
@@ -318,6 +334,11 @@ body {
 
 .projects .card1 .btn a {
   text-decoration: none;
+}
+
+.projects .card1 .btn:hover {
+  -webkit-box-shadow: 0px 8px 16px #45364D;
+          box-shadow: 0px 8px 16px #45364D;
 }
 
 @media screen and (max-width: 700px) {
@@ -447,6 +468,9 @@ body {
   border: none;
   border-radius: 5px;
   margin: 1.5% 0;
+  cursor: pointer;
+  -webkit-transition: all 0.5sec ease-in 1s;
+  transition: all 0.5sec ease-in 1s;
   background-color: #EDCE1D;
   color: rgba(27, 27, 27, 0.8);
   padding: 3% 4%;
@@ -454,6 +478,11 @@ body {
 
 .projects .card2 .btn a {
   text-decoration: none;
+}
+
+.projects .card2 .btn:hover {
+  -webkit-box-shadow: 0px 8px 16px #4D4936;
+          box-shadow: 0px 8px 16px #4D4936;
 }
 
 @media screen and (max-width: 700px) {
@@ -532,6 +561,9 @@ body {
   border: none;
   border-radius: 5px;
   margin: 1.5% 0;
+  cursor: pointer;
+  -webkit-transition: all 0.5sec ease-in 1s;
+  transition: all 0.5sec ease-in 1s;
   background-color: #A37CB5;
   color: white;
   margin-top: 21px;
@@ -540,6 +572,11 @@ body {
 
 .about .about_container .abouttext .btn a {
   text-decoration: none;
+}
+
+.about .about_container .abouttext .btn:hover {
+  -webkit-box-shadow: 0px 8px 16px #45364D;
+          box-shadow: 0px 8px 16px #45364D;
 }
 
 .about .about_container .skills {
@@ -716,6 +753,9 @@ body {
   border: none;
   border-radius: 5px;
   margin: 1.5% 0;
+  cursor: pointer;
+  -webkit-transition: all 0.5sec ease-in 1s;
+  transition: all 0.5sec ease-in 1s;
   background-color: #EDCE1D;
   color: rgba(27, 27, 27, 0.8);
   margin-top: 21px;
@@ -724,6 +764,11 @@ body {
 
 .contact .contactform .btn a {
   text-decoration: none;
+}
+
+.contact .contactform .btn:hover {
+  -webkit-box-shadow: 0px 8px 16px #4D4936;
+          box-shadow: 0px 8px 16px #4D4936;
 }
 
 .contact .card1frame {
