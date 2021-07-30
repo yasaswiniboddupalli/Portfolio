@@ -362,12 +362,15 @@ body {
   -webkit-transition: all 0.5sec ease-in 1s;
   transition: all 0.5sec ease-in 1s;
   background-color: #A37CB5;
-  color: white;
   padding: 3% 4%;
 }
 
 .projects .card1 .btn a {
   text-decoration: none;
+}
+
+.projects .card1 .btn a {
+  color: #E7E6F0;
 }
 
 .projects .card1 .btn:hover {
@@ -512,12 +515,15 @@ body {
   -webkit-transition: all 0.5sec ease-in 1s;
   transition: all 0.5sec ease-in 1s;
   background-color: #EDCE1D;
-  color: rgba(27, 27, 27, 0.8);
   padding: 3% 4%;
 }
 
 .projects .card2 .btn a {
   text-decoration: none;
+}
+
+.projects .card2 .btn a {
+  color: rgba(27, 27, 27, 0.8);
 }
 
 .projects .card2 .btn:hover {

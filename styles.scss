@@ -192,8 +192,10 @@ body{
         .btn{
             @include base_button;
             background-color: $project1-pill-color;
-            color:white;
             padding:3% 4%;
+            a{
+                color:$btn-text-color-light;
+            }
             &:hover{
                 box-shadow: 0px 8px 16px #45364D;
                }
@@ -234,8 +236,10 @@ body{
         .btn{
             @include base_button;
             background-color: $project2-pill-color;
-            color:$text-color;
             padding:3% 4%;
+            a{
+                color:$text-color;
+            }
             &:hover{
                 box-shadow: 0px 8px 16px #4D4936;
                }
