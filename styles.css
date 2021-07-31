@@ -622,13 +622,16 @@ body {
   -webkit-transition: all 0.5sec ease-in 1s;
   transition: all 0.5sec ease-in 1s;
   background-color: #A37CB5;
-  color: white;
   margin-top: 21px;
   padding: 3% 4%;
 }
 
 .about .about_container .abouttext .btn a {
   text-decoration: none;
+}
+
+.about .about_container .abouttext .btn a {
+  color: white;
 }
 
 .about .about_container .abouttext .btn:hover {
